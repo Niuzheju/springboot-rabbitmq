@@ -1,0 +1,12 @@
+spring:
+  rabbitmq:
+    host: 192.168.70.80
+    port: 5672
+    username: root
+    password: root
+    # 开启ACK
+    listener:
+      direct:
+        acknowledge-mode:  manual
+      simple:
+        acknowledge-mode: manual
